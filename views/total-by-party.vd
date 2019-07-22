@@ -12,3 +12,4 @@ sheet	col	row	longname	input	keystrokes	comment
 42nd_general_election_pivot_Amount_columns			quit-sheet		q	
 42nd_general_election_pivot_Amount	Total_Amount_sum		type-currency		$	
 42nd_general_election_pivot_Amount	Total_Amount_sum		sort-desc		]	
+42nd_general_election_pivot_Amount			save-sheet	report/total-by-party.tsv	^S
