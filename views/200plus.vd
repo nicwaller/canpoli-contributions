@@ -1,0 +1,5 @@
+sheet	col	row	longname	input	keystrokes	comment
+			open-file	42nd_general_election.csv.gz	o	
+42nd_general_election			select-rows		gs	
+42nd_general_election			unselect-cols-regex	Contributions of	g\	
+42nd_general_election			dup-selected		"	
