@@ -1,0 +1,14 @@
+sheet	col	row	longname	input	keystrokes	comment
+			open-file	42nd_general_election.csv.gz	o	
+42nd_general_election	Political Party of Recipient		rename-col	Party	^	
+42nd_general_election	Monetary amount		rename-col	Amount	^	
+42nd_general_election	Party		key-col		!	
+42nd_general_election	Amount		type-float		%	
+42nd_general_election	Amount		aggregate-col	sum	+	
+42nd_general_election	Amount		pivot		W	
+42nd_general_election_pivot_Amount			columns-sheet		C	
+42nd_general_election_pivot_Amount_columns	name		select-col-regex	Amount_sum_	|	
+42nd_general_election_pivot_Amount_columns			delete-selected		gd	
+42nd_general_election_pivot_Amount_columns			quit-sheet		q	
+42nd_general_election_pivot_Amount	Total_Amount_sum		type-currency		$	
+42nd_general_election_pivot_Amount	Total_Amount_sum		sort-desc		]	
